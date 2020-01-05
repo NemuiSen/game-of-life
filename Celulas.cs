@@ -119,7 +119,12 @@ namespace Game_of_life
 				Array.Copy(copy, state, cambas.X * cambas.Y);
 			}
 		}
-		public void Clear () { state.Initialize(); }
+		public void Clear () {
+			for (int i = 0; i < state.Length; i++)
+			{
+				state[i] = false;
+			}
+		}
 		public void tick () { play = !play; }
 		public void Click(uint x, uint y)
 		{
