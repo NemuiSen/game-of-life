@@ -1,0 +1,5 @@
+.vscode/
+bin/
+obj/
+makefile
+intento_anterior/
